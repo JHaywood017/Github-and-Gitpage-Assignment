@@ -1,0 +1,15 @@
+div.formRow {
+    margin:7px 0px;
+}
+
+legend {
+    background-color: teal;
+    color: white;
+    padding: 5px;
+ }
+
+ textarea {
+    margin-top: 10px;
+    height: 100px;
+    width: 95%;
+ }

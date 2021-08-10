@@ -1,0 +1,99 @@
+<head>
+    <link href="Lab-Forms.css" rel="stylesheet">
+</head>
+
+<form method="POST" action="your server endnode">
+<fieldset id="custInfo">
+    <legend>Student Information</legend>
+            
+    <div class="formRow">
+       <label for="fname">First name*</label>
+       <input name="custFName" id="fname" type="text" placeholder="first name" required />
+    </div>
+
+    <div class="formRow">
+        <label for="lname">Last name*</label>
+        <input name="custLName" id="lname" type="text" placeholder="last name" required />
+     </div>
+
+     <div class="formRow"> 
+        <label for="studentID">Student number*</label>
+        <input name="custID" id="studentID" type="text" placeholder="nnnnnnnnn" required />
+    </div>
+
+    <div class="formRow">            
+       <label for="street">Street address</label>
+       <input name="custStreet" id="street" type="text" />
+    </div>
+
+    <div class="formRow"> 
+       <label for="city">City</label>
+       <input name="custCity" id="city" type="text" value="Surrey" />
+    </div>
+
+    <div class="formRow"> 
+       <label for="province">Province</label>
+       <input name="custProv" id="province" type="text" value="BC" />
+    </div>
+
+    <div class="formRow"> 
+       <label for="postal">Postal code</label>
+       <input name="custPost" id="postal" type="text" placeholder="nnn nnn" 
+              pattern="^\d{5}(-\d{4})?$" />
+    </div>
+
+    <div class="formRow"> 
+       <label for="phone">Phone number</label>
+       <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"
+              pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+    </div>
+
+    <div class="formRow"> 
+       <label for="mail">E-mail*</label>
+       <input name="custEmail" id="mail" type="email" required />
+    </div>
+
+</fieldset> <br>
+<fieldset id="custFB">
+    <legend>Student Experience</legend>
+
+    <div class="formRow">
+        How old are you?
+        <input type="radio" name="custAge" value="under 18">Under 18
+        <input type="radio" name="custAge" value="19-25" checked>19-25
+        <input type="radio" name="custAge" value="26-35">26-35
+        <input type="radio" name="custAge" value="over 36">36&plus;
+    </div>
+
+    <div class="formRow">
+        Please check all that apply:<br>
+        <input type="checkbox" name="occupation1" value="ft student">I am a full time student<br>
+        <input type="checkbox" name="occupation2" value="pt student">I am a part time student<br>
+        <input type="checkbox" name="occupation3" value="ft work">I work full time<br>
+        <input type="checkbox" name="occupation4" value="pt work">I work part time<br>
+        <input type="checkbox" name="occupation5" value="parent/guardian">I am a parent/guardian<br>
+    </div>
+
+    <div class="formRow">
+        How far along are you in your studies?
+        <select name="years active">
+            <option>First year</option>
+            <option>Second year</option>
+            <option>Third year</option>
+            <option>Fourth year</option>
+            <option>PBD or PDD</option>
+        </select>
+
+    </div>
+
+    <div class="formRow">
+        What is your favourite thing about Douglas College?
+        <textarea name="favthing" placeholder="Tell us about your experience"></textarea>
+    </div>
+
+    <div>
+        <input type="submit">
+        <input type="reset">
+    </div>
+</fieldset>
+</form>
